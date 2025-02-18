@@ -31,5 +31,18 @@ h1 {
 
     text-align: center;
     margin-top: 100px;
+}
 
+#verLine {
+    border: 1px solid white;
+    rotate: 90deg;
+    margin-top: 15px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#horLine {
+    border: 1px solid white;
+    margin-top: 20px;
 }
