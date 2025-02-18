@@ -70,7 +70,6 @@ p {
 }
 
 .tabs {
-    overflow: hidden;
     display: grid;
     grid-template-rows: repeat(4, 50px);
     margin: 20px;
@@ -79,6 +78,7 @@ p {
 .tabs button {
     background-color: transparent;
     border: 1px solid white;
+    border-radius: 3px;
 }
 
 .tabs button:hover {
@@ -92,23 +92,26 @@ p {
 
 .tabsContent {
     display: none;
-    border-top: none;
-
-    >h3 {
-        font-size: 25px;
-    }
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    padding: 15px;
 
     >p {
         font-weight: 200;
-        margin-bottom: 10px;
     }
 }
+
+#tabInfo>h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
 
 #horLine2 {
     border: 1px solid white;
     margin-top: 10px;
     margin-bottom: 30px;
-    width: 80px;
+    width: 110px;
 }
 
 #tabHead {
@@ -129,4 +132,22 @@ p {
 
 #xmark img:hover {
     transform: scale(1) rotate(90deg);
+}
+
+@media (min-width: 768px) {
+    .tabs {
+        grid-template-columns: repeat(4, 140px);
+        justify-content: center;
+    }
+
+    p {
+        word-spacing: 3px;
+    }
+
+    .tabsContent {
+        width: 700px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
