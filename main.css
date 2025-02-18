@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    color: white;
+    font-family: lexend;
+    font-weight: 200;
+}
+
+body {
+
+    height: 100;
+    background-image: url(./images/bg.jpg);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-position: top;
+    background-size: auto;
+}
+
+
+#logo {
+    height: 40px;
+    width: 100%;
+}
