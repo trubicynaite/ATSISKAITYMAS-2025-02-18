@@ -7,7 +7,6 @@
 }
 
 body {
-
     height: 100;
     background-image: url(./images/bg.jpg);
     background-color: rgba(0, 0, 0, 0.4);
@@ -16,8 +15,21 @@ body {
     background-size: auto;
 }
 
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
 
 #logo {
-    height: 40px;
-    width: 100%;
+    >img {
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 100%;
+        padding: 30px;
+    }
+
+    text-align: center;
+    margin-top: 100px;
+
 }
