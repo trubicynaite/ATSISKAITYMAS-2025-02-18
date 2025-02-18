@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    color: white;
+    font-family: lexend;
+    font-weight: 200;
+}
+
+body {
+    height: 100;
+    background-image: url(./images/bg.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-position: top;
+    background-size: auto;
+    height: 800px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#logo {
+    >img {
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 100%;
+        padding: 30px;
+    }
+
+    text-align: center;
+    margin-top: 100px;
+}
+
+#verLine {
+    border: 1px solid white;
+    rotate: 90deg;
+    margin-top: 15px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#horLine {
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+#verLine2 {
+    border: 1px solid white;
+    rotate: 90deg;
+    margin-top: 20px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    padding-left: 10px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    padding-bottom: 20px;
+
+    a:hover {
+        color: rgb(114, 124, 195);
+    }
+}
+
+.tabs {
+    display: grid;
+    grid-template-rows: repeat(4, 50px);
+    margin: 20px;
+}
+
+.tabs button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.tabs button:hover {
+    background-color: rgba(255, 255, 255, 0.105);
+    cursor: pointer;
+}
+
+.tabs button.active {
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
+.tabsContent {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    padding: 15px;
+
+    >p {
+        font-weight: 200;
+    }
+}
+
+#tabInfo>h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+#horLine2 {
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 110px;
+}
+
+#tabHead {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#xmark img {
+    width: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 5px;
+
+    transition: all 2s;
+    transform-origin: center;
+}
+
+#xmark img:hover {
+    transform: scale(1) rotate(90deg);
+}
+
+@media (min-width: 768px) {
+    .tabs {
+        grid-template-columns: repeat(4, 140px);
+        justify-content: center;
+    }
+
+    p {
+        word-spacing: 3px;
+    }
+
+    .tabsContent {
+        width: 700px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
